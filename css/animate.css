@@ -1,0 +1,38 @@
+.fadeInRight{
+    animation: fadeInRight 1s ease-in;
+}
+.fadeInLeft{
+    animation: fadeInLeft 1s ease-in;
+}
+.animatedHR{
+    animation: changeHue 60s infinite linear;
+}
+
+@keyframes fadeInRight {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInLeft {
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes changeHue {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(-360deg);
+    }
+}
